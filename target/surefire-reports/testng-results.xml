@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Test Suite" duration-ms="11333" started-at="2021-07-07T18:19:09 BST" finished-at="2021-07-07T18:19:20 BST">
+    <groups>
+      <group name="Smoke">
+        <method signature="LoginScenario.logintest(java.lang.String,java.lang.String)[pri:0, instance:TestSet1.LoginScenario@7494e528]" name="logintest" class="TestSet1.LoginScenario"/>
+        <method signature="RegistrationScenario.loginTestcase1()[pri:0, instance:TestSet1.RegistrationScenario@3a883ce7]" name="loginTestcase1" class="TestSet1.RegistrationScenario"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="C:/Users/kalya/Downloads/test.project/EndtoEndProject/src/test/java/TestSet1" duration-ms="11333" started-at="2021-07-07T18:19:09 BST" finished-at="2021-07-07T18:19:20 BST">
+      <class name="TestSet1.LoginScenario">
+        <test-method status="PASS" signature="objectRepo(org.testng.ITestContext)[pri:0, instance:TestSet1.LoginScenario@7494e528]" name="objectRepo" is-config="true" duration-ms="2919" started-at="2021-07-07T18:19:14 BST" finished-at="2021-07-07T18:19:17 BST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1c481ff2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- objectRepo -->
+        <test-method status="PASS" signature="logintest(java.lang.String,java.lang.String)[pri:0, instance:TestSet1.LoginScenario@7494e528]" name="logintest" duration-ms="3452" started-at="2021-07-07T18:19:17 BST" data-provider="dataprover2" finished-at="2021-07-07T18:19:20 BST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kalyan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+      </class> <!-- TestSet1.LoginScenario -->
+      <class name="TestSet1.RegistrationScenario">
+        <test-method status="PASS" signature="initializewebdriver(java.lang.String)[pri:0, instance:TestSet1.RegistrationScenario@3a883ce7]" name="initializewebdriver" is-config="true" duration-ms="6638" started-at="2021-07-07T18:19:03 BST" finished-at="2021-07-07T18:19:09 BST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializewebdriver -->
+        <test-method status="PASS" signature="objectRepo(org.testng.ITestContext)[pri:0, instance:TestSet1.RegistrationScenario@3a883ce7]" name="objectRepo" is-config="true" duration-ms="3121" started-at="2021-07-07T18:19:09 BST" finished-at="2021-07-07T18:19:12 BST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1c481ff2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- objectRepo -->
+        <test-method status="PASS" signature="beforemethod()[pri:0, instance:TestSet1.RegistrationScenario@3a883ce7]" name="beforemethod" is-config="true" duration-ms="1" started-at="2021-07-07T18:19:12 BST" finished-at="2021-07-07T18:19:12 BST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="loginTestcase1()[pri:0, instance:TestSet1.RegistrationScenario@3a883ce7]" name="loginTestcase1" duration-ms="229" started-at="2021-07-07T18:19:12 BST" finished-at="2021-07-07T18:19:13 BST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestcase1 -->
+        <test-method status="PASS" signature="GobackHomepage()[pri:0, instance:TestSet1.RegistrationScenario@3a883ce7]" name="GobackHomepage" is-config="true" duration-ms="1518" started-at="2021-07-07T18:19:13 BST" finished-at="2021-07-07T18:19:14 BST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GobackHomepage -->
+      </class> <!-- TestSet1.RegistrationScenario -->
+    </test> <!-- C:/Users/kalya/Downloads/test.project/EndtoEndProject/src/test/java/TestSet1 -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
