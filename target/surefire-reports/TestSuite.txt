@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.863 s - in TestSuite
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 20.288 s <<< FAILURE! - in TestSuite
+TestSet1.RegistrationScenario.confirmerrors  Time elapsed: 0.126 s  <<< FAILURE!
+java.lang.AssertionError: expected [Email is required] but found [Email is required.]
+	at TestSet1.RegistrationScenario.confirmerrors(RegistrationScenario.java:39)
+
+TestSet1.LoginScenario.logintest  Time elapsed: 1.757 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at TestSet1.LoginScenario.logintest(LoginScenario.java:33)
+

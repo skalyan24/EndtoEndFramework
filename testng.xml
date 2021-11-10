@@ -2,12 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <parameter name="browser" value="chrome"></parameter>
-    <test verbose="2" preserve-order="true"
-          name="C:/Users/kalya/Downloads/test.project/EndtoEndProject/src/test/java/TestSet1">
+    <listeners>
+        <listener class-name="Listeners.Listenersclass"></listener>
+    </listeners>
 
+        <test verbose="2" preserve-order="true"
+          name="C:/Users/kalya/Downloads/test.project/EndtoEndProject/src/test/java/TestSet1">
+        
         <classes>
             <class name="TestSet1.RegistrationScenario"></class>
             <class name="TestSet1.LoginScenario"></class>
+
         </classes>
     </test>
 </suite>

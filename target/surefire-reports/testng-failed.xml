@@ -2,15 +2,26 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
   <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="Listeners.Listenersclass"/>
+  </listeners>
   <test thread-count="5" verbose="0" name="C:/Users/kalya/Downloads/test.project/EndtoEndProject/src/test/java/TestSet1(failed)">
     <classes>
       <class name="TestSet1.LoginScenario">
         <methods>
           <include name="objectRepo"/>
-          <include name="logintest"/>
+          <include name="logintest" invocation-numbers="0"/>
           <include name="initializewebdriver"/>
         </methods>
       </class> <!-- TestSet1.LoginScenario -->
+      <class name="TestSet1.RegistrationScenario">
+        <methods>
+          <include name="confirmerrors"/>
+          <include name="initializewebdriver"/>
+          <include name="objectRepo"/>
+          <include name="GobackHomepage"/>
+        </methods>
+      </class> <!-- TestSet1.RegistrationScenario -->
     </classes>
   </test> <!-- C:/Users/kalya/Downloads/test.project/EndtoEndProject/src/test/java/TestSet1(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

@@ -18,22 +18,31 @@ public class RegistrationScenario extends driverInitializationScript {
         regobj.loginIconclick();
         regobj.registerClick();
 
+
     }
 
-    @Test(groups = {"Smoke"})
+    @Test(groups = {"Smoke"}, priority = 1)
     public void loginTestcase1(){
 
         regobj.sendFristName("kalyan");
+        regobj.SendLastName("Kumar");
+        regobj.seleccountry();
+        regobj.SelectTimezone(3);
+        regobj.Registerbutton();
         //Assert.assertEquals(true,false);
 
     }
-    @BeforeMethod
-    public void beforemethod(){
-    System.out.println("sdfsdf");
+
+    @Test(priority = 2)
+    public void confirmerrors(){
+       String returnvalue = regobj.Confirmemail_error();
+       Assert.assertEquals(returnvalue,"Email is required");
     }
+
+
 
     @AfterClass
     public void GobackHomepage(){
-        driver.findElement(By.xpath("//*[@id=\"register-page\"]/body/div[6]/header/div/div[1]/a/img")).click();
+       driver.findElement(By.xpath("//*[@id=\"register-page\"]/body/div[7]/header/div/div[1]/a/img")).click();
     }
 }

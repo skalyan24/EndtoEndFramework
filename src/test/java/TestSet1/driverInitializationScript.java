@@ -1,5 +1,6 @@
 package TestSet1;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -19,19 +20,20 @@ public class driverInitializationScript {
         {
             case "chrome":
 
-                System.setProperty("webdriver.chrome.driver","C:\\Users\\kalya\\Downloads\\chromedriver_win32\\chromedriver.exe");
+                WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
                 break;
             case "edge":
-                System.setProperty("webdriver.edge.driver","C:\\Users\\kalya\\Downloads\\edgedriver_win64 (1)\\msedgedriver.exe");
+
+                WebDriverManager.edgedriver().setup();
                 driver = new EdgeDriver();
                 break;
+
         }
 
         String Website = "https://www.nopcommerce.com";
         driver.get(Website);
         driver.manage().window().maximize();
-        System.out.println("testing");
     }
 
 
